@@ -15,15 +15,16 @@ var ScoreSchema = new Schema({
 	scoreDate: {
 		type: Date,
 		default: Date.now
+	},
+	Wins: {
+		type: Number
+	},
+	Loses: {
+		type: Number
 	}
+	
 });
 
 var Score = mongoose.model("Score", ScoreSchema);
 module.exports = Score;
-
-
-
-
-
-
 
